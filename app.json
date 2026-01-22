@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Health Integration",
+    "slug": "health-integration",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lifeos.healthintegration",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "This app needs access to your health data to sync steps, sleep, heart rate, and workouts with your Life OS dashboard.",
+        "NSHealthUpdateUsageDescription": "This app needs permission to write health data to track your progress.",
+        "NSFaceIDUsageDescription": "This app uses Face ID to secure your health data."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "health-integration",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
