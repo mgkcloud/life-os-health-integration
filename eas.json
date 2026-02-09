@@ -4,6 +4,8 @@
     "appVersionSource": "remote"
   },
   "build": {
+    "node": "20.x",
+    "packageManager": "pnpm",
     "development": {
       "developmentClient": true,
       "distribution": "internal"
